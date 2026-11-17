@@ -1,0 +1,13 @@
+# dsh-fans-notify-center bundle patch。
+# 宿主半是唯一入口（监听 session/event、approval/request、user-questions/request，
+# 提供 /__dsh-notify-center/* 路由并拉起 win/NotifyCenter.exe）；
+# 浏览器半由 package.json 的 dsh.client 声明自动加载，只负责「点卡片 → 切会话」
+# 和「手动打开会话 → 撤掉对应卡片」。
+# 默认配置见 README 的「配置」一节；要改就在下面的 config 里写，例如：
+#   config:
+#     includeSubagents: true
+#     window:
+#       maxVisible: 4
+- insert:
+    - id: dsh-fans-notify-center
+      name: 'dsh-fans-notify-center'

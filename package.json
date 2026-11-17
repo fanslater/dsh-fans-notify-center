@@ -1,0 +1,35 @@
+{
+  "name": "dsh-fans-notify-center",
+  "version": "0.4.5",
+  "private": true,
+  "description": "作者：fanslater · 屏幕右下角常驻的通知弹窗：会话完成 / 待审批 / 待回答各自独立成卡，只有手动关闭或进入会话才会消失。",
+  "author": "fanslater",
+  "icon": "./icon.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "win",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}
