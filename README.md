@@ -1,6 +1,8 @@
+[English](./README.en.md) | **简体中文**
+
 # fans通知弹窗中心
 
-> 作者：**fanslater** · 包名 `dsh-fans-notify-center` · 当前版本 **0.4.4**
+> 作者：**fanslater** · 包名 `dsh-fans-notify-center` · 当前版本 **0.4.5**
 
 把 DSH 的「会话状态变更」变成**屏幕右下角的常驻通知弹窗**：任意工作区、任意会话出现
 「跑完了 / 等你审批 / 等你回答」，都会独立冒出一张卡片；卡片不会自己消失，只有你点 `✕`、
